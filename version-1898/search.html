@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="输入片名、地区、标签、年份即可快速检索 2000 条静态影片数据。">
+  <meta name="keywords" content="全站搜索,电影搜索,电视剧搜索,国产高清剧场">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="stylesheet" href="./assets/original.css">
+  <link rel="stylesheet" href="./assets/site.css">
+  <title>全站搜索 - 国产高清剧场</title>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+  </script>
+</head>
+<body>
+
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="./index.html" aria-label="返回首页">
+      <div class="brand-mark">影</div>
+      <div>
+        <div class="brand-title">国产高清剧场</div>
+        <div class="brand-sub">2000 部静态影片库 · 10 个分类页</div>
+      </div>
+    </a>
+    <button class="btn secondary mobile-menu" data-menu-toggle type="button">菜单</button>
+    <nav class="nav-links" data-menu>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    
+<div class="section-head">
+  <div>
+    <h2>全站搜索</h2>
+    <p>支持标题、地区、类型、标签、年份和简介匹配。</p>
+  </div>
+  <span class="pill">结果 <strong data-search-count>0</strong></span>
+</div>
+
+    <div class="panel pad">
+      <form data-search-form class="searchbar" action="./search.html" method="get">
+        <input data-search-input name="q" placeholder="例如：民国、悬疑、爱情、2024、香港">
+        <button class="btn" type="submit">搜索</button>
+      </form>
+    </div>
+    <div class="section" id="results">
+      <div class="grid movie-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>国产高清剧场 · 纯静态影视站 · HTML 直接写入内容，便于搜索引擎收录</p>
+  </div>
+</footer>
+
+<script type="module" src="./assets/site.js"></script>
+</body></html>
